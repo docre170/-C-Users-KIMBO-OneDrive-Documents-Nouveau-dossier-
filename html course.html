@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours HTML - CodeAmi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CodeAmi</h1>
+        <p style="color: #BAA7FF;">Apprenons le HTML ensemble !</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="html_course.html">Cours HTML</a></li>
+            <li><a href="css_course.html">Cours CSS</a></li>
+            <li><a href="python_course.html">Cours Python</a></li>
+            <li><a href="music.html">Musique</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Apprendre le HTML : Les Fondations du Web</h2>
+        <p>
+            HTML, ça veut dire <strong>HyperText Markup Language</strong>. Oublie le nom compliqué, retiens juste que
+            c'est le squelette de toutes les pages web !
+            Quand tu vois du texte, des images, des liens sur un site, c'est grâce à HTML qu'ils sont structurés.
+        </p>
+        <p>
+            Imagine que tu construis une maison :
+        </p>
+        <ul>
+            <li>HTML, ce sont les murs, le toit, les portes... la structure de base.</li>
+            <li>CSS (qu'on verra après), c'est la peinture, la décoration, pour que ce soit joli.</li>
+            <li>JavaScript (plus tard !), c'est l'électricité, la plomberie, pour que ça devienne interactif.</li>
+        </ul>
+
+        <h3>À quoi ça sert concrètement ?</h3>
+        <p>
+            Avec HTML, tu vas pouvoir :
+        </p>
+        <ul>
+            <li>Créer des titres (comme celui que tu lis) avec les balises <code>&lt;h1&gt;</code>,
+                <code>&lt;h2&gt;</code>, etc.</li>
+            <li>Écrire des paragraphes de texte avec la balise <code>&lt;p&gt;</code>.</li>
+            <li>Ajouter des images avec <code>&lt;img src="url_de_l_image" alt="description"&gt;</code>.</li>
+            <li>Faire des liens vers d'autres pages avec <code>&lt;a href="autre_page.html"&gt;</code>.</li>
+            <li>Et plein d'autres choses !</li>
+        </ul>
+
+        <div class="container">
+            <!-- ...existing code... -->
+            <h3>Un tout petit exemple</h3>
+            <p>
+                Voici à quoi ressemble un bout de code HTML très simple :
+            </p>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;Ma Première Page&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Salut le Monde !&lt;/h1&gt;
+                &lt;p&gt;Ceci est mon premier paragraphe en HTML.&lt;/p&gt;
+                &lt;img src="https://placehold.co/200x100/3C2E69/E2DDFE?text=Mon+Image" alt="Exemple d'image"&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+                    </pre>
+            <p>
+                Pas si sorcier, hein ? Le HTML, c'est surtout une question de balises qui s'ouvrent
+                (<code>&lt;nomdelabalise&gt;</code>) et qui se ferment (<code>&lt;/nomdelabalise&gt;</code>).
+                On va explorer ça ensemble !
+            </p>
+        
+            <h3>Les balises les plus courantes</h3>
+            <ul>
+                <li><code>&lt;h1&gt; ... &lt;/h1&gt;</code> à <code>&lt;h6&gt; ... &lt;/h6&gt;</code> : Titres de différents
+                    niveaux</li>
+                <li><code>&lt;p&gt; ... &lt;/p&gt;</code> : Paragraphe de texte</li>
+                <li><code>&lt;img src="..." alt="..."&gt;</code> : Image</li>
+                <li><code>&lt;a href="..."&gt; ... &lt;/a&gt;</code> : Lien cliquable</li>
+                <li><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code> : Listes à puces ou numérotées
+                </li>
+                <li><code>&lt;div&gt; ... &lt;/div&gt;</code> : Division ou section de page</li>
+                <li><code>&lt;span&gt; ... &lt;/span&gt;</code> : Pour styliser une partie de texte</li>
+                <li><code>&lt;br&gt;</code> : Saut de ligne</li>
+            </ul>
+        
+            <h3>Structure d’une page HTML</h3>
+            <p>
+                Une page HTML commence toujours par <code>&lt;!DOCTYPE html&gt;</code> pour indiquer le type de document.<br>
+                Ensuite, tout le contenu est placé entre <code>&lt;html&gt;</code> et <code>&lt;/html&gt;</code>.<br>
+                À l’intérieur, on trouve deux grandes parties :
+            </p>
+            <ul>
+                <li>
+                    <strong>&lt;head&gt; ... &lt;/head&gt;</strong> : informations sur la page (titre, liens vers des fichiers
+                    CSS, etc.)
+                </li>
+                <li>
+                    <strong>&lt;body&gt; ... &lt;/body&gt;</strong> : tout ce qui s’affiche à l’écran (titres, textes, images,
+                    etc.)
+                </li>
+            </ul>
+        
+            <h3>Pour aller plus loin</h3>
+            <ul>
+                <li>Tu peux ajouter des attributs aux balises, par exemple
+                    <code>&lt;a href="https://exemple.com"&gt;Visiter&lt;/a&gt;</code></li>
+                <li>Pour styliser ta page, tu utiliseras le CSS (voir le cours CSS !)</li>
+                <li>Pour rendre ta page interactive, tu découvriras JavaScript plus tard.</li>
+            </ul>
+        
+            <h3>À toi de jouer !</h3>
+            <p>
+                Essaie de créer ta propre page HTML en t’inspirant de l’exemple ci-dessus.<br>
+                Modifie le texte, ajoute une image différente, change le titre…<br>
+                Plus tu pratiques, plus tu comprendras vite !
+            </p>
+            <p>
+                <strong>Astuce :</strong> Tu peux ouvrir ton fichier HTML dans un navigateur pour voir le résultat en direct.
+            </p>
+        </div>
+        <p>
+            Pas si sorcier, hein ? Le HTML, c'est surtout une question de balises qui s'ouvrent
+            (<code>&lt;nomdelabalise&gt;</code>) et qui se ferment (<code>&lt;/nomdelabalise&gt;</code>).
+            On va explorer ça ensemble !
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CodeAmi - Fait avec ❤️ par un ami codeur.</p>
+    </footer>
+
+</body>
+
+</html>

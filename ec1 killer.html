@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vitrine/Mabs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            background-color: #3bbcec;
+            width: 100%;
+            padding: 10px;
+            height: 50px;
+            overflow: hidden;
+        }
+
+        #l1 {
+            list-style: none;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 20px;
+            position: relative;
+            top: -3px;
+            color: #fff;
+        }
+
+        #i2 {
+            width: 60px;
+            position: relative;
+            top: -5px;
+        }
+
+        #a1 {
+            text-decoration: none;
+            color: #fff;
+            padding: 20px;
+            border-bottom: solid 2px black;
+            display: inline;
+            margin-left: 100px;
+            border-radius: 10%;
+            font-size: 30px;
+            transition: all 1s ease;
+        }
+
+        #a1:hover {
+            background-color: #fff;
+            color: black;
+            border-bottom: solid 10px black;
+            transition: all 1s ease;
+        }
+
+        #a2 {
+            color: #fff;
+            display: block;
+            font-size: 40px;
+            text-decoration: none;
+            margin-top: 20px;
+            border: solid 2px black;
+            width: 205px;
+            background-color: #2babff;
+            transition: all 1s ease;
+            text-align: center;
+        }
+
+        #a2:hover {
+            background-color: #fff;
+            color: black;
+            border: solid 10px black;
+            width: 100px;
+            transition: all 1s ease;
+        }
+
+        #l2 {
+            list-style: none;
+            display: flex;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: #fff;
+            width: 50%;
+            margin-left: 10px;
+        }
+
+        #i1 {
+            width: 80%;
+            margin-left: 120px;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+
+        #d1 {
+            position: absolute;
+            left: 950px;
+            top: 350px;
+            padding: 10px;
+            display: block;
+            width: 500px;
+            color: #fff;
+            font-size: 40px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #d2 {
+            width: 200px;
+            background-color: #3bbcec;
+            color: #fff;
+            overflow: hidden;
+            text-align: center;
+            border: solid 2px black;
+            margin-top: 20px;
+            height: 350px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #d2:hover {
+            background-color: #fff;
+            color: black;
+            transition: all 1s ease;
+        }
+
+        #dp {
+            margin-left: 70px;
+            margin-right: auto;
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+            width: 90%;
+        }
+
+        #l3 {
+            display: flex;
+        }
+
+        #a3 {
+            background-color: #2babff;
+            border: solid 2px black;
+            text-decoration: none;
+            border-radius: 10%;
+            color: #fff;
+            font-size: 30px;
+            padding: 5px 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        #a3:hover {
+            background-color: #fff;
+            color: black;
+            border: solid 2px black;
+            transition: all 1s ease;
+        }
+
+        #d44 {
+            position: absolute;
+            top: 1800px;
+            background-color: #3bbcec;
+            width: 100%;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            padding: 30px 0;
+        }
+@media (max-width: 900px) {
+    #d1 {
+        position: static;
+        width: 90vw;
+        font-size: 28px;
+        margin: 20px auto;
+        text-align: center;
+    }
+    #dp {
+        margin-left: 0;
+        width: 100vw;
+        padding: 5px;
+        gap: 5px;
+        justify-content: center;
+    }
+    #d2 {
+        width: 45vw;
+        min-width: 180px;
+        max-width: 95vw;
+        margin: 10px 2vw;
+        height: auto;
+    }
+    #d2 img {
+        width: 90%;
+        height: auto;
+    }
+    h2 {
+        font-size: 28px;
+        width: 100%;
+        margin-left: 0;
+    }
+    #i1 {
+        width: 100vw;
+        margin-left: 0;
+    }
+    nav {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+    #l1 {
+        padding: 5px;
+        margin: 0;
+    }
+    #a1 {
+        font-size: 20px;
+        margin-left: 10px;
+        padding: 10px;
+    }
+    #a2 {
+        font-size: 24px;
+        width: 90vw;
+        margin: 10px auto;
+    }
+    #d44 {
+        position: static;
+        font-size: 18px;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #d1 {
+        font-size: 18px;
+        width: 98vw;
+        padding: 5px;
+    }
+    #d2 {
+        width: 95vw;
+        min-width: 120px;
+        margin: 10px auto;
+    }
+    #d2 img {
+        width: 95vw;
+        max-width: 300px;
+    }
+    #dp {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100vw;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    #a1, #a2, #a3 {
+        font-size: 16px;
+        padding: 6px 10px;
+        width: auto;
+    }
+    #i2 {
+        width: 40px;
+    }
+    #d44 {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <li id="l1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5M3k_9tOhXlwN5iqriJcCIWFNsX_ESEs3iBHYTYvP1ZvpgZ69LC_T3etR&s=10"
+                    alt="logo" id="i2">
+            </li>
+            <li id="l1">
+                <h1>Vitrine/Mabs</h1>
+                <a href="" id="a1">Accueil</a>
+                <a href="tel:0808775546" id="a1">Contact</a>
+                <a href="ec2.html" id="a1">Inscription</a>
+                <a href="" id="a1">Articles</a>
+                <a href="" id="a1">Panier</a>
+            </li>
+        </nav>
+    </header>
+    <main>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSza4wOALgaKA6FnownPWeQk77voemR6dqAU55uU1U5-ZAMTBBtSRbimeI0&s=10"
+            alt="img" id="i1" width="50px">
+        <div id="d1">
+            <h2>Achetez vos articles à moindre coût</h2>
+            <a href="" id="a2">Populaire</a>
+            <a href="" id="a2">Moins cher</a>
+        </div>
+        <div id="dp">
+            <div id="d2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4AwixCax4HLBXCuZoi5D5LECkjToopVVMN9upAsKwJajDlwQSlgnVNCqz&s=10"
+                    alt="Sac Louis Vuitton" width="250px">
+                <p>Sac Louis Vuitton<br>50 $<br>⭐⭐⭐</p>
+                <a href="" id="a3">Acheter</a>
+            </div>
+            <div id="d2">
+                <img src="https://us.123rf.com/450wm/2dmolier/2dmolier1605/2dmolier160500585/56938768-hommes-veste-de-costume-sur-fond-blanc-illustration-3d.jpg?ver=6"
+                    alt="Veste homme" width="250px">
+                <p>Veste homme<br>50 $<br>⭐⭐⭐</p>
+                <a href="" id="a3">Acheter</a>
+            </div>
+            <div id="d2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3dJNvKYNthHeGHh-7UXZzIfofN5zkyxE6I7LCy0r2PBNB3wI39vqUhr2U&s=10"
+                    alt="Sac Louis Vuitton" width="250px">
+                <p>Sac Louis Vuitton<br>50 $<br>⭐⭐⭐</p>
+                <a href="" id="a3">Acheter</a>
+            </div>
+            <div id="d2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCU-RxiFB4MuhqqkwwukGqvMyomBmye4mJgBbyth_9-9j5DhS5ys7V0is&s=10"
+                    alt="Sac Louis Vuitton" width="250px">
+                <p>Sac Louis Vuitton<br>50 $<br>⭐⭐⭐</p>
+                <a href="" id="a3">Acheter</a>
+            </div>
+            <div id="d2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHDxDnmJqvtBEom17wIkrCVyMGM60psCGG5A&usqp=CAU"
+                    alt="Sac Louis Vuitton" width="250px">
+                <p>Sac Louis Vuitton<br>50 $<br>⭐⭐⭐</p>
+                <a href="" id="a3">Acheter</a>
+            </div>
+            <div id="d2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaaVmaPkgcAkTDfEogdu__OWxxSTwizsvN1wUtmrTSXOxxrsSw9KmuF7I&s=10"
+                    alt="Sac Louis Vuitton" width="250px">
+                <p>Sac Louis Vuitton<br>50 $<br>⭐⭐⭐</p>
+                <a href="" id="a3">Acheter</a>
+            </div>
+            <div id="d2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB0VpJNUD6hio-yWkqn8VSUf4V8feIXykBIg&usqp=CAU"
+                    alt="Sac Louis Vuitton" width="250px">
+                <p>Sac Louis Vuitton<br>50 $<br>⭐⭐⭐</p>
+                <a href="" id="a3">Acheter</a>
+            </div>
+            <div id="d2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6cD-zN8A1mAsvr28685nl_nnadQqnrzCJqE2dj-kUlNw9V8L128DqJ18&s=10"
+                    alt="Sac Louis Vuitton" width="250px">
+                <p>Sac Louis Vuitton<br>50 $<br>⭐⭐⭐</p>
+                <a href="" id="a3">Acheter</a>
+            </div>
+            <div id="d2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo07-Vvj_8kNAs87d2qF8zVOCfl99b-A7VyOPwMtXbF_89DsJ5FdfqXNI&s=10"
+                    alt="Sac Louis Vuitton" width="250px">
+                <p>Sac Louis Vuitton<br>50 $<br>⭐⭐⭐</p>
+                <a href="" id="a3">Acheter</a>
+            </div>
+            <div id="d2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDKtw5cLklXEdYtry7X-VvdsCG4oTbRHbAVHqNBVHgj465u7XSeJPLiwk&s=10"
+                    alt="Sac Louis Vuitton" width="250px">
+                <p>Sac Louis Vuitton<br>50 $<br>⭐⭐⭐</p>
+                <a href="" id="a3">Acheter</a>
+            </div>
+            <div id="d2">
+                <img src="https://www.boutique-saison2.com/8054-home_default/chemise-polyvalente-bleue.jpg"
+                    alt="Chemise polyvalente bleue" width="250px">
+                <p>Chemise polyvalente bleue<br>50 $<br>⭐⭐⭐</p>
+                <a href="" id="a3">Acheter</a>
+            </div>
+            <div id="d2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJtMWFWuppmRbS2Rjb_dLSBfiUijOVqfm3uQ&s"
+                    alt="Sac Louis Vuitton" width="250px">
+                <p>Sac Louis Vuitton<br>50 $<br>⭐⭐⭐</p>
+                <a href="" id="a3">Acheter</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="d44">
+            <p>Inscrivez-vous en cliquant sur "Inscription".</p>
+            <p>Vous pouvez nous contacter en cliquant sur "Contact".</p>
+            <p>Cliquez sur "Articles" pour voir nos différents articles.</p>
+            <p>Cliquez sur "Panier" pour voir votre panier.</p>
+            <p>Email : jackmabs@gmail.com</p>
+            <p>Téléphone : +243 811104323</p>
+            <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+        </div>
+    </footer>
+</body>
+
+</html>

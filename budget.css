@@ -1,0 +1,229 @@
+/* toute la page*/
+* {
+    margin: 0;
+    /* enlever les marges*/
+    padding: 0;
+    /* enlever les marges*/
+    font-family: serif;
+    /* la police de la page*/
+    box-sizing: border-box;
+    /* pour que la taille de la page soit la meme*/
+}
+
+body {
+    background-color: rgb(120, 120, 121);
+    /* la couleur de fond de la page*/
+    padding: 20px;
+    /* espace autour du contenu */
+}
+body:hover {
+    background-color: rgb(100, 100, 100);
+    /* couleur de fond au survol */
+}
+/*l'entête de la page*/
+header {
+    background-color: rgb(39, 39, 39);
+    /* la couleur de fond de l'entete*/
+    padding: 30px 20px 30px 20px;
+    /* l'espace entre le texte et le bord de l'entete*/
+    display: flex;
+    /* pour aligner les éléments sur la même ligne */
+    align-items: center;
+    /* centre verticalement les éléments */
+    justify-content: space-between;
+    /* espace entre les éléments */
+}
+header:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* couleur de fond au survol de l'entete*/
+}
+/*mise en forme du nav*/
+nav a {
+    color: white;
+    /* couleur du texte */
+    font-style: italic;
+    /* style de la police */
+    font-size: x-large;
+    /* taille de la police */
+    text-decoration: none;
+    /* enlever le soulignement */
+    padding: 5px 10px;
+    /* espace autour du texte */
+}
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* couleur de fond au survol des liens */
+    border-radius: 10px;
+    /* arrondir les coins */
+}
+/*misee en forme pour le logo*/
+.logo {
+    font-size: xx-large;
+    /* taille de la police*/
+    font-style: italic;
+    /* style de la police*/
+    color: white;
+    /* couleur du texte*/
+}
+.logo:hover {
+    color: rgb(255, 255, 255);
+    /* couleur du texte au survol */
+}
+h1{
+    margin-bottom: 5px;
+}
+h2 {
+    font-size: 1.5em;
+    /* taille de la police */
+    color: rgb(0, 0, 0);
+    /* couleur du texte */
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 1.2em;
+    /* taille de la police */
+    color: rgb(0, 0, 0);
+    /* couleur du texte */
+    margin-bottom: 5px;
+}
+p {
+    font-size: 1.2em;
+    /* taille de la police */
+    color: rgb(0, 0, 0);
+    /* couleur du texte */
+    margin-bottom: 20px;
+    /* espace entre les paragraphes */
+}
+
+
+
+
+
+/* le pied de la page*/
+footer {
+    background-color: rgb(56, 55, 55);
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    font-style: italic;
+    margin-top: 500px;
+    /* espace entre le contenu et le pied de page */
+}
+footer:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* couleur de fond au survol du pied de page */
+}
+
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: large;
+        padding: 8px 0;
+    }
+
+    .logo {
+        font-size: x-large;
+        margin-bottom: 10px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    form,
+    .resultat {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.95em;
+        overflow-x: auto;
+        display: block;
+    }
+
+    th,
+    td {
+        padding: 6px 2px;
+    }
+
+    input[type="number"] {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    button {
+        width: 100%;
+        font-size: large;
+        padding: 10px 0;
+        margin-top: 10px;
+    }
+
+    footer {
+        font-size: large;
+        padding: 10px;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 10px 2px;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: large;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.1em;
+    }
+
+    nav a {
+        font-size: medium;
+    }
+
+    table {
+        font-size: 0.85em;
+    }
+
+    input[type="number"] {
+        font-size: 0.95em;
+    }
+
+    button {
+        font-size: medium;
+        padding: 8px 0;
+    }
+
+    footer {
+        font-size: medium;
+        padding: 5px;
+        margin-top: 50px;
+    }
+}

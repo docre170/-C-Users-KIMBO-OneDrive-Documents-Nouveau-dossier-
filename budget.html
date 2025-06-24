@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion du budget</title>
+    <link rel="stylesheet" href="budget.css"> <!-- lien vers le fichier CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <!-- Tête de la page -->
+    <header>
+        <h1 class="logo">ToD-All</h1>
+        <!-- Liens vers les autres pages -->
+        <nav>
+            <a href="accueil.html">Accueil</a>
+            <a href="taches.html">Gestion des tâches</a>
+            <a href="budget.html"><mark>Gestion du budget</mark></a>
+            <a href="contact.html">Contact</a>
+            <a href="Inscription.html">Se déconnecter</a>
+        </nav>
+    </header>
+    <!-- Corps de la page -->
+    <main>
+        <div data-aos="fade-down">
+        <!-- Titre -->
+        <h1>Optimisez et calculez votre budget en quelques clics</h1>
+        <p>Un outil simple pour une gestion efficace de vos finances.</p>
+        <!-- Bloc note du calcul du budget -->
+
+        <form action="semaine">
+            <div class="partie1" data-aos="fade-down">
+                <h2>Gestion de budget hebdomadaire</h2>
+                <p>Suivez vos dépenses et revenus de la semaine.</p>
+                <label for="depart">Montant de départ :</label>
+                <input type="number" id="depart" placeholder="Saisir le montant de départ" class="number">
+            </div>
+            <!-- Tableau -->
+            <table>
+                <h2>Dépenses et gains journaliers</h2>
+                <thead>
+                    <tr>
+                        <th>Jours</th>
+                        <th>Dépenses du jour</th>
+                        <th>Gains du jour</th>
+                    </tr>
+                </thead>
+                <tbody id="budget-table-body">
+                    <tr>
+                        <td>Lundi</td>
+                        <td><input type="number" placeholder="Dépenses" class="depense"></td>
+                        <td><input type="number" placeholder="Gains" class="gain"></td>
+                    </tr>
+                    <tr>
+                        <td>Mardi</td>
+                        <td><input type="number" placeholder="Dépenses" class="depense"></td>
+                        <td><input type="number" placeholder="Gains" class="gain"></td>
+                    </tr>
+                    <tr>
+                        <td>Mercredi</td>
+                        <td><input type="number" placeholder="Dépenses" class="depense"></td>
+                        <td><input type="number" placeholder="Gains" class="gain"></td>
+                    </tr>
+                    <tr>
+                        <td>Jeudi</td>
+                        <td><input type="number" placeholder="Dépenses" class="depense"></td>
+                        <td><input type="number" placeholder="Gains" class="gain"></td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td><input type="number" placeholder="Dépenses" class="depense"></td>
+                        <td><input type="number" placeholder="Gains" class="gain"></td>
+                    </tr>
+                    <tr>
+                        <td>Samedi</td>
+                        <td><input type="number" placeholder="Dépenses" class="depense"></td>
+                        <td><input type="number" placeholder="Gains" class="gain"></td>
+                    </tr>
+                    <tr>
+                        <td>Dimanche</td>
+                        <td><input type="number" placeholder="Dépenses" class="depense"></td>
+                        <td><input type="number" placeholder="Gains" class="gain"></td>
+                    </tr>
+                </tbody>
+            </table><br><br><br>
+            <button id="calculer-depense-semaine()">🧮 Calculer vos dépenses de la semaine</button>
+        </form>
+        <!-- Résultat -->
+        <div class="resultat">
+            <h2>Résultat</h2>
+            <p id="depenses-semaine">Vos dépenses totales de la semaine sont de : <span id="total-depenses"></span></p>
+            <p id="gains-semaine">Vos gains totaux de la semaine sont de : <span id="total-gains"></span></p>
+            <p id="reste-semaine">Il vous reste : <span id="reste-budget"></span></p>
+        </div>
+    </div>
+    </main>
+    <!-- Pied de la page -->
+    <footer>
+        ©2025 - Fièrement construit par Esther Civava
+    </footer>
+</body>
+<script>
+    AOS.init();
+</script>
+</html>

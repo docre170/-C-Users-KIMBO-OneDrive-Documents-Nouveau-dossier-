@@ -1,0 +1,137 @@
+body {
+    background: url(./file_00000000f830623089515186b8f43184.png);
+    background-repeat: no-repeat;
+    background-position: 150px 0;
+}
+
+span {
+    color: rgb(250, 235, 20);
+}
+
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center
+}
+
+/* .FORMULAIRE{
+    background-color: rgb(232, 241, 222);
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.301);
+    border: 50px;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 50px;
+    position:absolute;
+    background-size: cover;
+    background-position: center;
+} */
+
+#FORMULAIRE {
+    background-color: #dbdee2;
+    height: 250px;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 20px 20px #a3b1c6;
+    margin-bottom: 400px;
+}
+
+#border_input_1 {
+    background-color: rgb(241, 244, 247);
+    padding: 5px;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #a3b1c6;
+
+}
+
+#border_input_2 {
+    background-color: rgb(241, 244, 247);
+    padding: 5px;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #a3b1c6;
+}
+
+#border_input_3 {
+    background-color: rgb(241, 244, 247);
+    padding: 5px;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #8a9099;
+}
+
+#button {
+    background-color: rgb(241, 244, 247);
+    padding: 4px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #a3b1c6;
+}
+
+input {
+    background-color: rgb(241, 244, 247);
+    border: none;
+}
+
+#button:hover {
+    background-color: rgb(233, 218, 9);
+}
+
+#InButton:hover {
+    background-color: rgb(233, 218, 9);
+    border-radius: 5px;
+}
+
+label {
+    text-align: justify;
+}
+
+.div1 {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border-radius: 150px;
+
+}
+
+.div2 {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border-radius: 150px;
+}
+
+.div3 {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border-radius: 150px;
+}
+
+.div4 {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border-radius: 150px;
+}
+
+.div5 {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border-radius: 150px;
+}
+
+.div6 {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border-radius: 150px;
+}

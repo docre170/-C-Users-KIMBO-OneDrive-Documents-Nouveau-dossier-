@@ -1,0 +1,153 @@
+/*la mise en forme du body*/
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url("p.png");
+    background-size: 100%;
+}
+
+/*le mise en forme pour le titre de la premiere page*/
+h1 {
+    text-align: left;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+h2 {
+    text-align: center;
+    font-size: x-large;
+}
+
+
+form {
+    border: 2px solid;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border-radius: 100px;
+    padding: 25px;
+    width: 400px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+::placeholder {
+    width: 90%;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: large;
+    color: black;
+}
+
+input[type="submit"] {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 20px;
+    width: 150px;
+    border-style: solid;
+    font-size: large;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: large;
+}
+button {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 20px;
+    width: 150px;
+    border-style: solid;
+    font-size: large;
+}
+a:hover{
+    color: blue;
+}
+header img {
+    width: 50px;
+    height: 50px;
+}
+header h1 {
+    font-size: xx-large;
+    margin-left: 10px;
+}
+headder h2 {
+    font-size: x-large;
+    margin-right: 10px;
+}
+header:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+div {
+    color: black;
+    font-size: large;
+    text-align: center;
+}
+
+label {
+    font-size: x-large;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+    }
+
+    form {
+        width: 95%;
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+    h1,
+    h2 {
+        font-size: large;
+        text-align: center;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    ::placeholder {
+        font-size: medium;
+        width: 98%;
+        padding: 8px;
+    }
+
+    input[type="submit"],
+    button {
+        width: 100%;
+        font-size: medium;
+    }
+
+    .partie img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+    form {
+        width: 70%;
+        padding: 20px;
+        border-radius: 50px;
+    }
+}
