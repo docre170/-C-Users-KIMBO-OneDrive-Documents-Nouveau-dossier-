@@ -1,2 +1,2 @@
-# -C-Users-KIMBO-OneDrive-Documents-Nouveau-dossier-
+# Projet des autres étudiants
 pour les autres
